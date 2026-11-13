@@ -22,8 +22,7 @@ def sha256_of(path):
 
 
 def main():
-        out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR") or "/output"
-    
+    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR") or "/output"
     if not os.path.isfile(SOURCE):
         print("error: entry.png not found next to main.py", file=sys.stderr)
         return 1
